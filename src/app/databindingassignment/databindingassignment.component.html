@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="form-group col-4 mt-4">
+           <label class="form-control-label">Username</label>
+           <input class="form-control" type="text" [(ngModel)]="userName">
+           <button class="btn btn-primary mt-4" (click)="userName=''" [disabled]="userName==''">Reset</button>
+           <p class="mt-2">{{userName}}</p>
+        </div>
+    </div>
+</div>
