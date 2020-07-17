@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <button class="btn btn-info mt-2" 
+    (click)="increment()">{{btnStatus}}</button>
+    <p *ngIf="btnStatus!='show'">Secret Password = Tuna</p>
+    <h5 class="mt-2">Log-count</h5>
+    <p [ngStyle]="{backgroundColor:logItemColor}" [ngClass]="{logstyle:i==4}" *ngFor="let log of logArray;let i=index">{{i+1}}</p>
+</div>

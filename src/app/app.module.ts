@@ -7,12 +7,14 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DatabindingassignmentComponent } from './databindingassignment/databindingassignment.component';
 import { RouterModule } from '@angular/router';
 import {FormsModule} from '@angular/forms';
+import { DirectiveassignmentComponent } from './directiveassignment/directiveassignment.component';
 @NgModule({
   declarations: [
     AppComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    DatabindingassignmentComponent
+    DatabindingassignmentComponent,
+    DirectiveassignmentComponent
   ],
   imports: [
     BrowserModule,
