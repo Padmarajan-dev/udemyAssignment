@@ -8,13 +8,19 @@ import { DatabindingassignmentComponent } from './databindingassignment/databind
 import { RouterModule } from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import { DirectiveassignmentComponent } from './directiveassignment/directiveassignment.component';
+import { TestingComponent } from './testing/testing.component';
+import { CustomStyleDirectiveDirective } from './Directives/custom-style-directive.directive';
+import { DropdownDirective } from './Directives/dropdown.directive';
 @NgModule({
   declarations: [
     AppComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
     DatabindingassignmentComponent,
-    DirectiveassignmentComponent
+    DirectiveassignmentComponent,
+    TestingComponent,
+    CustomStyleDirectiveDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

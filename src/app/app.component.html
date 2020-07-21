@@ -1,6 +1,10 @@
-<div class="container-fluid" *ngIf="!router.url.includes('databind' && 'directive')">
+<div class="container-fluid" *ngIf="!router.url.includes('databind' && 'directive' && 'test')">
+  <p goGreen class="mt-5">Touch Here..</p>
   <h4 class="text-center">Hello Angular</h4>
   <app-success-alert></app-success-alert>
   <app-warning-alert></app-warning-alert>
+  <app-testing (sendDataToParent)="addelem($event)" [childData]="parentDataArray">
+    content inside a component selector
+  </app-testing>
 </div>
 <router-outlet></router-outlet>

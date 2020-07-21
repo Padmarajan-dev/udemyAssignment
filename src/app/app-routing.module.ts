@@ -3,13 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DatabindingassignmentComponent } from './databindingassignment/databindingassignment.component';
 import { DirectiveassignmentComponent } from './directiveassignment/directiveassignment.component';
+import { TestingComponent } from './testing/testing.component';
 
 
 const routes: Routes = [
-  {
-    path:'',
-    component:AppComponent
-  },
   {
     path:'databind',
     component:DatabindingassignmentComponent
@@ -17,6 +14,10 @@ const routes: Routes = [
   {
     path:'directive',
     component:DirectiveassignmentComponent
+  },
+  {
+    path:'test',
+    component:TestingComponent
   }
 ];
 

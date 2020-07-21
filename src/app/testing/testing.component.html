@@ -1,0 +1,6 @@
+<button class="btn btn-primary" (click)="add()">Add more</button>
+<div *ngFor="let data of childData">
+    <p>Name:{{data.name}}</p>
+    <p>Age:{{data.Age}}</p>
+    <ng-content></ng-content>
+</div>
