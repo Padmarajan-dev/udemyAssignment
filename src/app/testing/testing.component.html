@@ -4,3 +4,9 @@
     <p>Age:{{data.Age}}</p>
     <ng-content></ng-content>
 </div>
+<button class="btn btn-success ml-2" (click)="fetch()">Fetch</button>
+<div *ngFor="let dtafrmservs of dtafrmserv">
+    <p>Id: {{dtafrmservs.id}}</p>
+    <p>User: {{dtafrmservs.name}}</p>
+    <p>Website: {{dtafrmservs.website}}</p>
+</div>

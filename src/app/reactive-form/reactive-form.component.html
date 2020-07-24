@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-lg-4 col-10 mx-auto mt-5" [formGroup]="projectForm">
+       <div class="form-group">
+           <label class="form-control-label">Project Name</label>
+           <input class="form-control" formControlName="projectName">
+       </div>
+       <span class="err-text" *ngIf="f.projectName.hasError('required') && f.projectName.touched">Please Enter a ProjectName</span>
+       <span class="err-text" *ngIf="!f.projectName.valid && f.projectName.touched">Projectname is not Valid!</span>
+       <div class="form-group mt-1">
+        <label class="form-control-label">Mail</label>
+        <input class="form-control" formControlName="Mail">
+       </div>
+       <span class="err-text" *ngIf="f.Mail.hasError('required') && f.Mail.touched">Please Enter a Email</span>
+       <span class="err-text" *ngIf="f.Mail.hasError('email') && f.Mail.touched">Please Enter a Valid Email</span>
+       <div class="form-group mt-1">
+        <label class="form-control-label">Project Status</label>
+          <select class="custom-select" formControlName="projectStatus">
+              <option value="stable">Stable</option>
+              <option value="critical">Critical</option>
+              <option value="finished">Finished</option>
+          </select>
+       </div>
+       <span class="err-text" *ngIf="f.projectStatus.hasError('required') && f.projectStatus.touched">Please Enter a ProjectStaus</span>
+       <div>
+           <button [disabled]="!projectForm.valid" class="btn btn-success mt-3" (click)="submit()">Submit</button>
+       </div>
+    </div>
+</div>
